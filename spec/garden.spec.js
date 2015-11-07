@@ -109,22 +109,22 @@ describe('Disordered class', function () {
   var students = ['Samantha', 'Patricia', 'Xander', 'Roger'];
   var garden = new Garden(diagram, students);
 
-  xit('Patricia', function () {
+  it('Patricia', function () {
     expect(garden.patricia)
       .toEqual(['violets', 'clover', 'radishes', 'violets']);
   });
 
-  xit('Roger', function () {
+  it('Roger', function () {
     expect(garden.roger)
       .toEqual(['radishes', 'radishes', 'grass', 'clover']);
   });
 
-  xit('Samantha', function () {
+  it('Samantha', function () {
     expect(garden.samantha)
       .toEqual(['grass', 'violets', 'clover', 'grass']);
   });
 
-  xit('Xander', function () {
+  it('Xander', function () {
     expect(garden.xander)
       .toEqual(['radishes', 'grass', 'clover', 'violets']);
   });
@@ -136,7 +136,7 @@ describe('Two gardens, different students', function () {
   var garden1 = new Garden(diagram, ['Alice', 'Bob', 'Charlie', 'Dan']);
   var garden2 = new Garden(diagram, ['Bob', 'Charlie', 'Dan', 'Erin']);
 
-  xit('Bob and Charlie for each garden', function () {
+  it('Bob and Charlie for each garden', function () {
     expect(garden1.bob)
       .toEqual(['radishes', 'radishes', 'grass', 'clover']);
     expect(garden2.bob)
